@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-14T08:55:15.932664+00:00",
+  "timestamp": "2022-01-27T23:58:51.820811+00:00",
   "repo": "ietf-rats-wg/basic-yang-module",
   "labels": [
     {
@@ -2495,6 +2495,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 58,
+      "id": "PR_kwDODX-izs4xtYbJ",
+      "title": "Remove redundant references",
+      "url": "https://github.com/ietf-rats-wg/basic-yang-module/pull/58",
+      "state": "OPEN",
+      "author": "ericvoit",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-01-27T23:58:33Z",
+      "updatedAt": "2022-01-27T23:58:33Z",
+      "baseRepository": "ietf-rats-wg/basic-yang-module",
+      "baseRefName": "master",
+      "baseRefOid": "9997d2bd8be62fda936e94a814771cb485b8fc5b",
+      "headRepository": "ietf-rats-wg/basic-yang-module",
+      "headRefName": "ericvoit-remove-references",
+      "headRefOid": "040007dba33828c04bce8b047143d8163df99652",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
