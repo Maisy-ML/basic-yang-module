@@ -5,7 +5,7 @@
 RATS Working Group                                           H. Birkholz
 Internet-Draft                                                  M. Eckel
 Intended status: Standards Track                          Fraunhofer SIT
-Expires: 31 July 2022                                        S. Bhandari
+Expires: 1 August 2022                                       S. Bhandari
                                                              ThoughtSpot
                                                                  E. Voit
                                                                B. Sulzen
@@ -16,7 +16,7 @@ Expires: 31 July 2022                                        S. Bhandari
                                                                      HPE
                                                              G. Fedorkow
                                                                  Juniper
-                                                         27 January 2022
+                                                         28 January 2022
 
 
    A YANG Data Model for Challenge-Response-based Remote Attestation
@@ -53,7 +53,7 @@ Status of This Memo
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 1]
+Birkholz, et al.          Expires 1 August 2022                 [Page 1]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -68,7 +68,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 31 July 2022.
+   This Internet-Draft will expire on 1 August 2022.
 
 Copyright Notice
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 2]
+Birkholz, et al.          Expires 1 August 2022                 [Page 2]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -165,7 +165,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 3]
+Birkholz, et al.          Expires 1 August 2022                 [Page 3]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -221,7 +221,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 4]
+Birkholz, et al.          Expires 1 August 2022                 [Page 4]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -277,7 +277,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 5]
+Birkholz, et al.          Expires 1 August 2022                 [Page 5]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -333,7 +333,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 6]
+Birkholz, et al.          Expires 1 August 2022                 [Page 6]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -389,7 +389,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 7]
+Birkholz, et al.          Expires 1 August 2022                 [Page 7]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -445,7 +445,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 8]
+Birkholz, et al.          Expires 1 August 2022                 [Page 8]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -501,7 +501,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                  [Page 9]
+Birkholz, et al.          Expires 1 August 2022                 [Page 9]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -557,7 +557,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 10]
+Birkholz, et al.          Expires 1 August 2022                [Page 10]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -613,7 +613,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 11]
+Birkholz, et al.          Expires 1 August 2022                [Page 11]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -669,7 +669,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 12]
+Birkholz, et al.          Expires 1 August 2022                [Page 12]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -725,7 +725,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 13]
+Birkholz, et al.          Expires 1 August 2022                [Page 13]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -781,7 +781,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 14]
+Birkholz, et al.          Expires 1 August 2022                [Page 14]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -837,7 +837,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 15]
+Birkholz, et al.          Expires 1 August 2022                [Page 15]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -893,7 +893,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 16]
+Birkholz, et al.          Expires 1 August 2022                [Page 16]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -949,7 +949,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 17]
+Birkholz, et al.          Expires 1 August 2022                [Page 17]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1005,7 +1005,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 18]
+Birkholz, et al.          Expires 1 August 2022                [Page 18]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1061,7 +1061,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 19]
+Birkholz, et al.          Expires 1 August 2022                [Page 19]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1117,7 +1117,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 20]
+Birkholz, et al.          Expires 1 August 2022                [Page 20]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1173,7 +1173,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 21]
+Birkholz, et al.          Expires 1 August 2022                [Page 21]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1229,7 +1229,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 22]
+Birkholz, et al.          Expires 1 August 2022                [Page 22]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1285,7 +1285,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 23]
+Birkholz, et al.          Expires 1 August 2022                [Page 23]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1341,7 +1341,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 24]
+Birkholz, et al.          Expires 1 August 2022                [Page 24]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1397,7 +1397,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 25]
+Birkholz, et al.          Expires 1 August 2022                [Page 25]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1453,7 +1453,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 26]
+Birkholz, et al.          Expires 1 August 2022                [Page 26]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1509,7 +1509,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 27]
+Birkholz, et al.          Expires 1 August 2022                [Page 27]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1565,7 +1565,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 28]
+Birkholz, et al.          Expires 1 August 2022                [Page 28]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1621,7 +1621,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 29]
+Birkholz, et al.          Expires 1 August 2022                [Page 29]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1677,7 +1677,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 30]
+Birkholz, et al.          Expires 1 August 2022                [Page 30]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1733,7 +1733,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 31]
+Birkholz, et al.          Expires 1 August 2022                [Page 31]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1789,7 +1789,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 32]
+Birkholz, et al.          Expires 1 August 2022                [Page 32]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1845,7 +1845,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 33]
+Birkholz, et al.          Expires 1 August 2022                [Page 33]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1866,9 +1866,9 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        description
          "This feature indicates algorithm support for the TPM 2.0 API
           as per Section 11.4 of Trusted Platform Module Library
-          Part 1: Architecture
+          Part 1: Architecture. See TPM2.0-Arch
           https://trustedcomputinggroup.org/wp-content/uploads/
-          TPM-Rev-2.0-Part-1-Architecture-01.38.pdf";
+          TPM-Rev-2.0-Part-1-Architecture-01.07-2014-03-13.pdf";
      }
 
 
@@ -1901,7 +1901,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 34]
+Birkholz, et al.          Expires 1 August 2022                [Page 34]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -1957,13 +1957,15 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 35]
+Birkholz, et al.          Expires 1 August 2022                [Page 35]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
        reference
-         "TPM-Main-Part-2-TPM-Structures_v1.2_rev116_01032011.pdf
+         "TPM1.2-Structures
+          https://trustedcomputinggroup.org/wp-content/uploads/
+          TPM-Main-Part-2-TPM-Structures_v1.2_rev116_01032011.pdf
           TPM_ALGORITHM_ID values, page 18";
      }
 
@@ -1973,7 +1975,9 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        description
          "Supportable by a TPM2.";
        reference
-         "TPM-Rev-2.0-Part-2-Structures-01.38.pdf
+         "TPM2.0-Structures
+          https://trustedcomputinggroup.org/wp-content/uploads/
+          TPM-Rev-2.0-Part-2-Structures-01.38.pdf
           The TCG Algorithm Registry. Table 9";
      }
 
@@ -2006,18 +2010,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      identity TPM_ALG_SHA1 {
        if-feature "tpm12 or tpm20";
        base hash;
-       base tpm12;
-       base tpm20;
-       description
-         "SHA1 algorithm - Deprecated due to insufficient cryptographic
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 36]
+Birkholz, et al.          Expires 1 August 2022                [Page 36]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       base tpm12;
+       base tpm20;
+       description
+         "SHA1 algorithm - Deprecated due to insufficient cryptographic
           protection.  However it is still useful for hash algorithms
           where protection is not required.";
        reference
@@ -2062,18 +2066,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
           ALG_ID: 0x0007";
      }
 
-     identity TPM_ALG_KEYEDHASH {
-       if-feature "tpm20";
-       base tpm20;
-       base hash;
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 37]
+Birkholz, et al.          Expires 1 August 2022                [Page 37]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+     identity TPM_ALG_KEYEDHASH {
+       if-feature "tpm20";
+       base tpm20;
+       base hash;
        base object_type;
        description
          "An encryption or signing algorithm using a keyed hash.  These
@@ -2118,18 +2122,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           ISO/IEC 10118-3. ALG_ID: 0x000C";
-     }
-
-     identity TPM_ALG_SHA512  {
-       if-feature "tpm20";
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 38]
+Birkholz, et al.          Expires 1 August 2022                [Page 38]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+     }
+
+     identity TPM_ALG_SHA512  {
+       if-feature "tpm20";
        base tpm20;
        base hash;
        description
@@ -2174,18 +2178,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      identity TPM_ALG_RSASSA {
        if-feature "tpm20";
        base tpm20;
-       base asymmetric;
-       base signing;
-       description
-         "Signature algorithm defined in section 8.2 (RSASSAPKCS1-v1_5)";
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 39]
+Birkholz, et al.          Expires 1 August 2022                [Page 39]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       base asymmetric;
+       base signing;
+       description
+         "Signature algorithm defined in section 8.2 (RSASSAPKCS1-v1_5)";
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and RFC 8017.
           ALG_ID: 0x0014";
@@ -2230,18 +2234,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      identity TPM_ALG_ECDSA {
        if-feature "tpm20";
        base tpm20;
-       base asymmetric;
-       base signing;
-       description
-         "Signature algorithm using elliptic curve cryptography (ECC)";
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 40]
+Birkholz, et al.          Expires 1 August 2022                [Page 40]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       base asymmetric;
+       base signing;
+       description
+         "Signature algorithm using elliptic curve cryptography (ECC)";
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           ISO/IEC 14888-3. ALG_ID: 0x0018";
@@ -2286,18 +2290,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3
          ALG_ID: 0x001B";
-     }
-
-     identity TPM_ALG_ECSCHNORR {
-       if-feature "tpm20";
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 41]
+Birkholz, et al.          Expires 1 August 2022                [Page 41]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+     }
+
+     identity TPM_ALG_ECSCHNORR {
+       if-feature "tpm20";
        base tpm20;
        base asymmetric;
        base signing;
@@ -2342,18 +2346,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
          "Key derivation function";
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
-          IEEE 1363a-2004 KDF2 section 13.2. ALG_ID: 0x0021";
-     }
-
-     identity TPM_ALG_KDF1_SP800_108 {
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 42]
+Birkholz, et al.          Expires 1 August 2022                [Page 42]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+          IEEE 1363a-2004 KDF2 section 13.2. ALG_ID: 0x0021";
+     }
+
+     identity TPM_ALG_KDF1_SP800_108 {
        base TPM_ALG_KDF2;
        description
          "A key derivation method";
@@ -2398,18 +2402,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      identity TPM_ALG_SHA3_256  {
        if-feature "tpm20";
        base tpm20;
-       base hash;
-       description
-         "ISO/IEC 10118-3 - the SHA 256 algorithm";
-       reference
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 43]
+Birkholz, et al.          Expires 1 August 2022                [Page 43]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       base hash;
+       description
+         "ISO/IEC 10118-3 - the SHA 256 algorithm";
+       reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           NIST PUB FIPS 202. ALG_ID: 0x0027";
      }
@@ -2454,18 +2458,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        base symmetric;
        base encryption_mode;
        description
-         "Counter mode";
-       reference
-         "TCG Algorithm Registry Revision 01.32  Table 3 and
-          ISO/IEC 10116. ALG_ID: 0x0040";
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 44]
+Birkholz, et al.          Expires 1 August 2022                [Page 44]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+         "Counter mode";
+       reference
+         "TCG Algorithm Registry Revision 01.32  Table 3 and
+          ISO/IEC 10116. ALG_ID: 0x0040";
      }
 
      identity TPM_ALG_OFB {
@@ -2510,17 +2514,18 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        base encryption_mode;
        description
          "Electronic Codebook mode";
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 45]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
+
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           ISO/IEC 10116. ALG_ID: 0x0044";
      }
-
-
-
-Birkholz, et al.          Expires 31 July 2022                 [Page 45]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
 
      identity TPM_ALG_CCM  {
        if-feature "tpm20";
@@ -2565,19 +2570,19 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      identity TPM_ALG_KWP {
        if-feature "tpm20";
        base tpm20;
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 46]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
+
        base symmetric;
        base signing;
        base encryption_mode;
        description
          "AES Key Wrap with Padding (KWP)";
-
-
-
-Birkholz, et al.          Expires 31 July 2022                 [Page 46]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
-
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           NIST SP800-38F. ALG_ID: 0x0053";
@@ -2622,17 +2627,16 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
    URI:  urn:ietf:params:xml:ns:yang:ietf-tpm-remote-attestation
 
-      Registrant Contact:  The IESG.
-
-      XML:  N/A; the requested URI is an XML namespace.
 
 
-
-
-Birkholz, et al.          Expires 31 July 2022                 [Page 47]
+Birkholz, et al.          Expires 1 August 2022                [Page 47]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+      Registrant Contact:  The IESG.
+
+      XML:  N/A; the requested URI is an XML namespace.
 
    URI:  urn:ietf:params:xml:ns:yang:ietf-tcg-algs
 
@@ -2679,17 +2683,14 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    effect on network operations.  These are the subtrees and data nodes
    as well as their sensitivity/vulnerability:
 
-   Container '/rats-support-structures/attester-supported-algos':  'tpm1
 
 
-
-
-
-Birkholz, et al.          Expires 31 July 2022                 [Page 48]
+Birkholz, et al.          Expires 1 August 2022                [Page 48]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+   Container '/rats-support-structures/attester-supported-algos':  'tpm1
       2-asymmetric-signing', 'tpm12-hash', 'tpm20-asymmetric-signing',
       and 'tpm20-hash'.  All could be populated with algorithms that are
       not supported by the underlying physical TPM installed by the
@@ -2740,8 +2741,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-
-Birkholz, et al.          Expires 31 July 2022                 [Page 49]
+Birkholz, et al.          Expires 1 August 2022                [Page 49]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -2797,7 +2797,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 50]
+Birkholz, et al.          Expires 1 August 2022                [Page 50]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -2853,7 +2853,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 51]
+Birkholz, et al.          Expires 1 August 2022                [Page 51]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -2909,7 +2909,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 52]
+Birkholz, et al.          Expires 1 August 2022                [Page 52]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -2965,7 +2965,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 53]
+Birkholz, et al.          Expires 1 August 2022                [Page 53]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -3021,7 +3021,7 @@ Authors' Addresses
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 54]
+Birkholz, et al.          Expires 1 August 2022                [Page 54]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
@@ -3077,4 +3077,4 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
 
-Birkholz, et al.          Expires 31 July 2022                 [Page 55]
+Birkholz, et al.          Expires 1 August 2022                [Page 55]
