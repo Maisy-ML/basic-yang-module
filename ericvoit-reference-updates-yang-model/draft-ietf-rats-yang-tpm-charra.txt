@@ -1013,7 +1013,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      grouping boot-event-log {
        description
          "Defines a specific instance of an event log entry
-          which corresponds to the information used to
+          and corresponding to the information used to
           extended the PCR";
        leaf event-number {
          type uint32;
