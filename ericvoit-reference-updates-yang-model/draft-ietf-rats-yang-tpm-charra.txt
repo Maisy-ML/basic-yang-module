@@ -569,7 +569,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
         (RFC 8174) when, and only when, they appear in all
         capitals, as shown here.";
 
-     revision 2021-11-16 {
+     revision 2022-01-27 {
        description
          "Initial version";
        reference
