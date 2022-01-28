@@ -98,7 +98,7 @@ Table of Contents
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  51
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .  51
      6.2.  Informative References  . . . . . . . . . . . . . . . . .  56
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  56
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  57
 
 
 
@@ -181,6 +181,9 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
    This YANG module imports modules from [RFC6991], [RFC8348],
    [I-D.ietf-netconf-keystore], and ietf-tcg-algs.yang Section 2.1.2.3.
+   Additionally references are made to [RFC8032], [RFC8017], [RFC6933],
+   [TPM1.2-Commands], [TPM2.0-Arch], [TPM2.0-Structures], [TPM2.0-Key],
+   [PC-Client-EFI-TPM-1.2], [ima-log], and [netequip-boot-log].
 
 2.1.1.1.  Features
 
@@ -210,13 +213,10 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    In the following, RPCs for both TPM 1.2 and TPM 2.0 attestation
    procedures are defined.
 
-2.1.1.3.1.  'tpm12-challenge-response-attestation'
 
-   This RPC allows a Verifier to request signed TPM PCRs (_TPM Quote_
-   operation) from a TPM 1.2 compliant cryptoprocessor.  Where the
-   feature 'TPMs' is active, and one or more 'certificate-name' is not
-   provided, all TPM 1.2 compliant cryptoprocessors will respond.  A
-   YANG tree diagram of this RPC is as follows:
+
+
+
 
 
 
@@ -225,6 +225,14 @@ Birkholz, et al.          Expires 1 August 2022                 [Page 4]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+2.1.1.3.1.  'tpm12-challenge-response-attestation'
+
+   This RPC allows a Verifier to request signed TPM PCRs (_TPM Quote_
+   operation) from a TPM 1.2 compliant cryptoprocessor.  Where the
+   feature 'TPMs' is active, and one or more 'certificate-name' is not
+   provided, all TPM 1.2 compliant cryptoprocessors will respond.  A
+   YANG tree diagram of this RPC is as follows:
 
    +---x tpm12-challenge-response-attestation {taa:TPM12}?
       +---w input
@@ -266,14 +274,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
                   +--ro pcr-index    pcr
                   +--ro pcr-value?   binary
 
-   An example of an RPC challenge requesting PCRs 0-7 from a SHA-256
-   bank could look like the following:
-
-
-
-
-
-
 
 
 
@@ -281,6 +281,9 @@ Birkholz, et al.          Expires 1 August 2022                 [Page 5]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+   An example of an RPC challenge requesting PCRs 0-7 from a SHA-256
+   bank could look like the following:
 
  <rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
    <tpm20-challenge-response-attestation>
@@ -311,6 +314,30 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
    A successful response could be formatted as follows:
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Birkholz, et al.          Expires 1 August 2022                 [Page 6]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
+
    <rpc-reply message-id="101"
      xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
      <tpm20-attestation-response
@@ -330,13 +357,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        </quote-signature>
      </tpm20-attestation-response>
    </rpc-reply>
-
-
-
-Birkholz, et al.          Expires 1 August 2022                 [Page 6]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
 
 2.1.1.4.  'log-retrieval'
 
@@ -366,6 +386,14 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
                   +--ro (attested_event_log_type)
                      +--:(bios) {bios}?
                      |  +--ro bios-event-logs
+
+
+
+Birkholz, et al.          Expires 1 August 2022                 [Page 7]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
+
                      |     +--ro bios-event-entry* [event-number]
                      |        +--ro event-number    uint32
                      |        +--ro event-type?     uint32
@@ -386,14 +414,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
                      |        +--ro template-hash-algorithm?   string
                      |        +--ro template-hash?             binary
                      |        +--ro pcr-index?                 pcr
-
-
-
-Birkholz, et al.          Expires 1 August 2022                 [Page 7]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
-
                      |        +--ro signature?                 binary
                      +--:(netequip_boot) {netequip_boot}?
                         +--ro boot-event-logs
@@ -422,26 +442,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
       each supported TPM, including the tpm-firmware-version, PCRs which
       may be quoted, certificates which are associated with that TPM,
       and the current operational status.  Of note are the certificates
-      which are associated with that TPM.  As a certificate is
-      associated with a particular TPM attestation key, knowledge of the
-      certificate allows a specific TPM to be identified.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -449,6 +449,10 @@ Birkholz, et al.          Expires 1 August 2022                 [Page 8]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+      which are associated with that TPM.  As a certificate is
+      associated with a particular TPM attestation key, knowledge of the
+      certificate allows a specific TPM to be identified.
 
    +--rw tpms
       +--rw tpm* [name]
@@ -495,16 +499,14 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
          +--ro node-name?             string
          +--ro node-location?         string
 
-2.1.1.6.  YANG Module
-
-
-
 
 
 Birkholz, et al.          Expires 1 August 2022                 [Page 9]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+2.1.1.6.  YANG Module
 
    <CODE BEGINS> file "ietf-tpm-remote-attestation@2021-11-16.yang"
    module ietf-tpm-remote-attestation {
@@ -552,8 +554,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
         (https://trustee.ietf.org/license-info).
         This version of this YANG module is part of RFC XXXX
         (https://www.rfc-editor.org/info/rfcXXXX); see the RFC
-        itself for full legal notices.
-
 
 
 
@@ -561,6 +561,8 @@ Birkholz, et al.          Expires 1 August 2022                [Page 10]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+        itself for full legal notices.
 
         The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL',
         'SHALL NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED',
@@ -609,8 +611,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
           TCG_IWG_CEL_v1_r0p30_13feb2021.pdf  Section 4.3";
      }
 
-     feature netequip_boot {
-
 
 
 Birkholz, et al.          Expires 1 August 2022                [Page 11]
@@ -618,6 +618,7 @@ Birkholz, et al.          Expires 1 August 2022                [Page 11]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+     feature netequip_boot {
        description
          "The device supports the netequip_boot logs.";
        reference
@@ -665,7 +666,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
          "Base identity allowing categorization of the reasons why and
           attested measurement has been taken on an Attester.";
      }
-
 
 
 
@@ -1755,13 +1755,17 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 2.1.2.  'ietf-tcg-algs'
 
-   Cryptographic algorithm types were initially included within -v14
-   NETCONF's iana-crypto-types.yang.  Unfortunately, all this content
-   including the algorithms needed here failed to make the -v15 used
-   WGLC.  As a result, this document has encoded the TCG Algorithm
-   definitions of [TCG-Algos], revision 1.32.  By including this full
-   table as a separate YANG file within this document, it is possible
-   for other YANG models to leverage the contents of this model.
+   This document has encoded the TCG Algorithm definitions of
+   [TCG-Algos], revision 1.32.  By including this full table as a
+   separate YANG file within this document, it is possible for other
+   YANG models to leverage the contents of this model.  Specific
+   references to [ISO_IEC_9797-1], [ISO_IEC_9797-2], [ISO_IEC_10116],
+   [ISO_IEC_10118-3], [ISO_IEC_14888-3], [ISO_IEC_15946-1],
+   [ISO_IEC_18033-3], [IEEE_Std_1363-2000], [IEEE_Std_1363a-2004],
+   [NIST_PUB_FIPS_202], [NIST_SP800-38C], [NIST_SP800-38D],
+   [NIST_SP800-38F], [NIST_SP800-56A], [NIST_SP800-108],
+   [PC-Client-EFI-TPM-1.2], [ima-log], and [netequip-boot-log] exist
+   within the YANG Model.
 
 2.1.2.1.  Features
 
@@ -1783,10 +1787,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
    2.  *API specifications* for TPMs: 'tpm12' and 'tpm20'
 
-   3.  *Specific algorithm types*: Each algorithm type defines what
-       cryptographic functions may be supported, and on which type of
-       API specification.  It is not required that an implementation of
-
 
 
 Birkholz, et al.          Expires 1 August 2022                [Page 32]
@@ -1794,13 +1794,16 @@ Birkholz, et al.          Expires 1 August 2022                [Page 32]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+   3.  *Specific algorithm types*: Each algorithm type defines what
+       cryptographic functions may be supported, and on which type of
+       API specification.  It is not required that an implementation of
        a specific TPM will support all algorithm types.  The contents of
        each specific algorithm mirrors what is in Table 3 of
        [TCG-Algos].
 
 2.1.2.3.  YANG Module
 
-   <CODE BEGINS> file "ietf-tcg-algs@2021-11-05.yang"
+   <CODE BEGINS> file "ietf-tcg-algs@2022-01-27.yang"
    module ietf-tcg-algs {
      yang-version 1.1;
      namespace "urn:ietf:params:xml:ns:yang:ietf-tcg-algs";
@@ -1839,9 +1842,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        description
          "Initial version";
        reference
-         "RFC XXXX: tbd";
-     }
-
 
 
 
@@ -1849,6 +1849,9 @@ Birkholz, et al.          Expires 1 August 2022                [Page 33]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+         "RFC XXXX: tbd";
+     }
 
      /*****************/
      /*   Features    */
@@ -1895,9 +1898,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
      identity hash {
        description
-         "A TCG recognized hash algorithm that compresses input data to
-          a digest value or indicates a method that uses a hash.";
-       reference
 
 
 
@@ -1906,6 +1906,9 @@ Birkholz, et al.          Expires 1 August 2022                [Page 34]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+         "A TCG recognized hash algorithm that compresses input data to
+          a digest value or indicates a method that uses a hash.";
+       reference
          "TCG Algorithm Registry Revision 01.32  Table 2";
      }
 
@@ -1951,9 +1954,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
      identity tpm12 {
        if-feature "tpm12";
-       base cryptoprocessor;
-       description
-         "Supportable by a TPM1.2.";
 
 
 
@@ -1962,6 +1962,9 @@ Birkholz, et al.          Expires 1 August 2022                [Page 35]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       base cryptoprocessor;
+       description
+         "Supportable by a TPM1.2.";
        reference
          "TPM-Main-Part-2-TPM-Structures_v1.2_rev116_01032011.pdf
           TPM_ALGORITHM_ID values, page 18";
@@ -2007,9 +2010,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        if-feature "tpm12 or tpm20";
        base hash;
        base tpm12;
-       base tpm20;
-       description
-         "SHA1 algorithm - Deprecated due to insufficient cryptographic
 
 
 
@@ -2018,6 +2018,9 @@ Birkholz, et al.          Expires 1 August 2022                [Page 36]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       base tpm20;
+       description
+         "SHA1 algorithm - Deprecated due to insufficient cryptographic
           protection.  However it is still useful for hash algorithms
           where protection is not required.";
        reference
@@ -2063,9 +2066,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
      }
 
      identity TPM_ALG_KEYEDHASH {
-       if-feature "tpm20";
-       base tpm20;
-       base hash;
 
 
 
@@ -2074,6 +2074,9 @@ Birkholz, et al.          Expires 1 August 2022                [Page 37]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       if-feature "tpm20";
+       base tpm20;
+       base hash;
        base object_type;
        description
          "An encryption or signing algorithm using a keyed hash.  These
@@ -2120,9 +2123,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
           ISO/IEC 10118-3. ALG_ID: 0x000C";
      }
 
-     identity TPM_ALG_SHA512  {
-       if-feature "tpm20";
-
 
 
 Birkholz, et al.          Expires 1 August 2022                [Page 38]
@@ -2130,6 +2130,8 @@ Birkholz, et al.          Expires 1 August 2022                [Page 38]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+     identity TPM_ALG_SHA512  {
+       if-feature "tpm20";
        base tpm20;
        base hash;
        description
@@ -2176,8 +2178,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        base tpm20;
        base asymmetric;
        base signing;
-       description
-         "Signature algorithm defined in section 8.2 (RSASSAPKCS1-v1_5)";
 
 
 
@@ -2186,6 +2186,8 @@ Birkholz, et al.          Expires 1 August 2022                [Page 39]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       description
+         "Signature algorithm defined in section 8.2 (RSASSAPKCS1-v1_5)";
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and RFC 8017.
           ALG_ID: 0x0014";
@@ -2232,8 +2234,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        base tpm20;
        base asymmetric;
        base signing;
-       description
-         "Signature algorithm using elliptic curve cryptography (ECC)";
 
 
 
@@ -2242,6 +2242,8 @@ Birkholz, et al.          Expires 1 August 2022                [Page 40]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+       description
+         "Signature algorithm using elliptic curve cryptography (ECC)";
        reference
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           ISO/IEC 14888-3. ALG_ID: 0x0018";
@@ -2289,8 +2291,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
           32918.4-2016, GB/T 32918.5-2017. ALG_ID: 0x001B";
      }
 
-     identity TPM_ALG_ECSCHNORR {
-
 
 
 Birkholz, et al.          Expires 1 August 2022                [Page 41]
@@ -2298,6 +2298,7 @@ Birkholz, et al.          Expires 1 August 2022                [Page 41]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
+     identity TPM_ALG_ECSCHNORR {
        if-feature "tpm20";
        base tpm20;
        base asymmetric;
@@ -2345,7 +2346,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
          "TCG Algorithm Registry Revision 01.32  Table 3 and
           IEEE 1363a-2004 KDF2 section 13.2. ALG_ID: 0x0021";
      }
-
 
 
 
@@ -2876,6 +2876,10 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               Cryptography - Amendment 1: Additional Techniques", n.d.,
               <https://ieeexplore.ieee.org/document/1335427>.
 
+   [ima-log]  "Canonical Event Log Format, Section 4.3", n.d.,
+              <https://www.trustedcomputinggroup.org/wp-content/uploads/
+              TCG_IWG_CEL_v1_r0p30_13feb2021.pdf>.
+
    [ISO_IEC_10116]
               "ISO/IEC 10116:2017 - Information technology", n.d.,
               <https://www.iso.org/standard/64575.html>.
@@ -2901,10 +2905,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               9797-1:2011", n.d.,
               <https://www.iso.org/standard/50375.html>.
 
-   [ISO_IEC_9797-2]
-              "Message Authentication Codes (MACs) - ISO/IEC
-              9797-2:2011", n.d.,
-              <https://www.iso.org/standard/51618.html>.
 
 
 
@@ -2913,6 +2913,16 @@ Birkholz, et al.          Expires 1 August 2022                [Page 52]
 
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
+
+   [ISO_IEC_9797-2]
+              "Message Authentication Codes (MACs) - ISO/IEC
+              9797-2:2011", n.d.,
+              <https://www.iso.org/standard/51618.html>.
+
+   [netequip-boot-log]
+              "IMA Policy Kernel Documentation", n.d.,
+              <https://www.kernel.org/doc/Documentation/ABI/testing/
+              ima_policy>.
 
    [NIST_PUB_FIPS_202]
               "SHA-3 Standard: Permutation-Based Hash and Extendable-
@@ -2950,6 +2960,23 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               <https://csrc.nist.gov/publications/detail/sp/800-56a/rev-
               3/final>.
 
+
+
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 53]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
+
+   [PC-Client-EFI-TPM-1.2]
+              Trusted Computing Group, "TCG EFI Platform Specification
+              for TPM Family 1.1 or 1.2, Specification Version 1.22,
+              Revision 15", 1 January 2014,
+              <https://trustedcomputinggroup.org/resource/tcg-efi-
+              platform-specification/>.
+
    [RFC2014]  Weinrib, A. and J. Postel, "IRTF Research Group Guidelines
               and Procedures", BCP 8, RFC 2014, DOI 10.17487/RFC2014,
               October 1996, <https://www.rfc-editor.org/info/rfc2014>.
@@ -2962,13 +2989,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    [RFC3688]  Mealling, M., "The IETF XML Registry", BCP 81, RFC 3688,
               DOI 10.17487/RFC3688, January 2004,
               <https://www.rfc-editor.org/info/rfc3688>.
-
-
-
-Birkholz, et al.          Expires 1 August 2022                [Page 53]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
 
    [RFC6020]  Bjorklund, M., Ed., "YANG - A Data Modeling Language for
               the Network Configuration Protocol (NETCONF)", RFC 6020,
@@ -2984,6 +3004,11 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               Shell (SSH)", RFC 6242, DOI 10.17487/RFC6242, June 2011,
               <https://www.rfc-editor.org/info/rfc6242>.
 
+   [RFC6933]  Bierman, A., Romascanu, D., Quittek, J., and M.
+              Chandramouli, "Entity MIB (Version 4)", RFC 6933,
+              DOI 10.17487/RFC6933, May 2013,
+              <https://www.rfc-editor.org/info/rfc6933>.
+
    [RFC6991]  Schoenwaelder, J., Ed., "Common YANG Data Types",
               RFC 6991, DOI 10.17487/RFC6991, July 2013,
               <https://www.rfc-editor.org/info/rfc6991>.
@@ -2991,6 +3016,15 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    [RFC7748]  Langley, A., Hamburg, M., and S. Turner, "Elliptic Curves
               for Security", RFC 7748, DOI 10.17487/RFC7748, January
               2016, <https://www.rfc-editor.org/info/rfc7748>.
+
+
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 54]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
 
    [RFC8017]  Moriarty, K., Ed., Kaliski, B., Jonsson, J., and A. Rusch,
               "PKCS #1: RSA Cryptography Specifications Version 2.2",
@@ -3015,17 +3049,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               DOI 10.17487/RFC8341, March 2018,
               <https://www.rfc-editor.org/info/rfc8341>.
 
-
-
-
-
-
-
-Birkholz, et al.          Expires 1 August 2022                [Page 54]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
-
    [RFC8348]  Bierman, A., Bjorklund, M., Dong, J., and D. Romascanu, "A
               YANG Data Model for Hardware Management", RFC 8348,
               DOI 10.17487/RFC8348, March 2018,
@@ -3048,6 +3071,16 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               "TPM Main Part 3 Commands", n.d.,
               <https://trustedcomputinggroup.org/wp-content/uploads/TPM-
               Main-Part-3-Commands_v1.2_rev116_01032011.pdf>.
+
+
+
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 55]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
 
    [TPM1.2-Structures]
               "TPM Main Part 2 TPM Structures", n.d.,
@@ -3074,14 +3107,6 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               n.d., <https://trustedcomputinggroup.org/wp-
               content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf>.
 
-
-
-
-Birkholz, et al.          Expires 1 August 2022                [Page 55]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
-
 6.2.  Informative References
 
    [bios-log] "TCG PC Client Platform Firmware Profile Specification,
@@ -3098,27 +3123,20 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
               <https://www.ietf.org/archive/id/draft-ietf-rats-
               reference-interaction-models-05.txt>.
 
-   [ima-log]  "Canonical Event Log Format, Section 4.3", n.d.,
-              <https://www.trustedcomputinggroup.org/wp-content/uploads/
-              TCG_IWG_CEL_v1_r0p30_13feb2021.pdf>.
-
-   [netequip-boot-log]
-              "IMA Policy Kernel Documentation", n.d.,
-              <https://www.kernel.org/doc/Documentation/ABI/testing/
-              ima_policy>.
-
    [NIST-915121]
               "True Randomness Can’t be Left to Chance: Why entropy is
               important for information security", n.d.,
               <https://tsapps.nist.gov/publication/
               get_pdf.cfm?pub_id=915121>.
 
-   [PC-Client-EFI-TPM-1.2]
-              Trusted Computing Group, "TCG EFI Platform Specification
-              for TPM Family 1.1 or 1.2, Specification Version 1.22,
-              Revision 15", 1 January 2014,
-              <https://trustedcomputinggroup.org/resource/tcg-efi-
-              platform-specification/>.
+
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 56]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
 
 Authors' Addresses
 
@@ -3129,13 +3147,6 @@ Authors' Addresses
    Germany
 
    Email: henk.birkholz@sit.fraunhofer.de
-
-
-
-
-Birkholz, et al.          Expires 1 August 2022                [Page 56]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
    Michael Eckel
@@ -3175,6 +3186,14 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    Email: Frank.Xialiang@huawei.com
 
 
+
+
+
+Birkholz, et al.          Expires 1 August 2022                [Page 57]
+
+Internet-Draft            YANG-CHARRA for TPMs              January 2022
+
+
    Tom Laffey
    Hewlett Packard Enterprise
 
@@ -3186,26 +3205,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
    10 Technology Park Drive
    Westford
 
-
-
-
-Birkholz, et al.          Expires 1 August 2022                [Page 57]
-
-Internet-Draft            YANG-CHARRA for TPMs              January 2022
-
-
    Email: gfedorkow@juniper.net
-
-
-
-
-
-
-
-
-
-
-
 
 
 
