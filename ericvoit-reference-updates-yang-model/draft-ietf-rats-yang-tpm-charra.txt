@@ -515,7 +515,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
        prefix yang;
      }
      import ietf-hardware {
-       prefix ietfhw;
+       prefix hw;
      }
      import ietf-keystore {
        prefix ks;
@@ -1458,7 +1458,7 @@ Birkholz, et al.          Expires 1 August 2022                [Page 26]
 Internet-Draft            YANG-CHARRA for TPMs              January 2022
 
 
-             if-feature "ietfhw:entity-mib";
+             if-feature "hw:entity-mib";
              type int32 {
                range "1..2147483647";
              }
@@ -1498,7 +1498,7 @@ Internet-Draft            YANG-CHARRA for TPMs              January 2022
                 TPM?";
            }
            leaf physical-index {
-             if-feature "ietfhw:entity-mib";
+             if-feature "hw:entity-mib";
              type int32 {
                range "1..2147483647";
              }

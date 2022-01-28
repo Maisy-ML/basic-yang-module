@@ -1334,7 +1334,7 @@ module ietf-tpm-remote-attestation {
     prefix yang;
   }
   import ietf-hardware {
-    prefix ietfhw;
+    prefix hw;
   }
   import ietf-keystore {
     prefix ks;
@@ -2142,7 +2142,7 @@ module ietf-tpm-remote-attestation {
             "ID of the compute node, such as Board Serial Number.";
         }
         leaf node-physical-index {
-          if-feature "ietfhw:entity-mib";
+          if-feature "hw:entity-mib";
           type int32 {
             range "1..2147483647";
           }
@@ -2182,7 +2182,7 @@ module ietf-tpm-remote-attestation {
              TPM?";
         }
         leaf physical-index {
-          if-feature "ietfhw:entity-mib";
+          if-feature "hw:entity-mib";
           type int32 {
             range "1..2147483647";
           }
