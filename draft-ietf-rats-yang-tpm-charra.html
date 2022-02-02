@@ -825,11 +825,11 @@ address div.right {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">YANG-CHARRA for TPMs</td>
-<td class="right">January 2022</td>
+<td class="right">February 2022</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Birkholz, et al.</td>
-<td class="center">Expires 2 August 2022</td>
+<td class="center">Expires 6 August 2022</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -842,12 +842,12 @@ address div.right {
 <dd class="internet-draft">draft-ietf-rats-yang-tpm-charra-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2022-01-29" class="published">29 January 2022</time>
+<time datetime="2022-02-02" class="published">2 February 2022</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2022-08-02">2 August 2022</time></dd>
+<dd class="expires"><time datetime="2022-08-06">6 August 2022</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -919,7 +919,7 @@ address div.right {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 2 August 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 6 August 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1038,7 +1038,7 @@ appear in all capitals, as shown here.<a href="#section-1.1-1" class="pilcrow">�
           <h4 id="name-ietf-tpm-remote-attestation">
 <a href="#section-2.1.1" class="section-number selfRef">2.1.1. </a><a href="#name-ietf-tpm-remote-attestation" class="section-name selfRef">'ietf-tpm-remote-attestation'</a>
           </h4>
-<p id="section-2.1.1-1">This YANG module imports modules from <span>[<a href="#RFC6991" class="xref">RFC6991</a>]</span>, <span>[<a href="#RFC8348" class="xref">RFC8348</a>]</span>, <span>[<a href="#I-D.ietf-netconf-keystore" class="xref">I-D.ietf-netconf-keystore</a>]</span>, and <code>ietf-tcg-algs.yang</code> <a href="#ref-ietf-tcg-algs" class="xref">Section 2.1.2.3</a>.<a href="#section-2.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.1.1-1">This YANG module imports modules from <span>[<a href="#RFC6991" class="xref">RFC6991</a>]</span>, <span>[<a href="#RFC8348" class="xref">RFC8348</a>]</span>, <span>[<a href="#I-D.ietf-netconf-keystore" class="xref">I-D.ietf-netconf-keystore</a>]</span>, and <code>ietf-tcg-algs.yang</code> <a href="#ref-ietf-tcg-algs" class="xref">Section 2.1.2.3</a>.  Additionally references are made to <span>[<a href="#RFC8032" class="xref">RFC8032</a>]</span>,  <span>[<a href="#RFC8017" class="xref">RFC8017</a>]</span>,  <span>[<a href="#RFC6933" class="xref">RFC6933</a>]</span>,  <span>[<a href="#TPM1.2-Commands" class="xref">TPM1.2-Commands</a>]</span>,  <span>[<a href="#TPM2.0-Arch" class="xref">TPM2.0-Arch</a>]</span>,  <span>[<a href="#TPM2.0-Structures" class="xref">TPM2.0-Structures</a>]</span>,  <span>[<a href="#TPM2.0-Key" class="xref">TPM2.0-Key</a>]</span>, <span>[<a href="#TPM1.2-Structures" class="xref">TPM1.2-Structures</a>]</span>,  <span>[<a href="#PC-Client-EFI-TPM-1.2" class="xref">PC-Client-EFI-TPM-1.2</a>]</span>, <span>[<a href="#ima-log" class="xref">ima-log</a>]</span>, and <span>[<a href="#netequip-boot-log" class="xref">netequip-boot-log</a>]</span>.<a href="#section-2.1.1-1" class="pilcrow">¶</a></p>
 <div id="features">
 <section id="section-2.1.1.1">
             <h5 id="name-features">
@@ -1325,7 +1325,7 @@ Container 'tpms':  </dt>
 <figure id="figure-1">
               <div id="section-2.1.1.6-1.1">
 <pre class="lang-YANG sourcecode">
-&lt;CODE BEGINS&gt; file "ietf-tpm-remote-attestation@2021-11-16.yang"
+&lt;CODE BEGINS&gt; file "ietf-tpm-remote-attestation@2022-11-16.yang"
 module ietf-tpm-remote-attestation {
   namespace "urn:ietf:params:xml:ns:yang:ietf-tpm-remote-attestation";
   prefix tpm;
@@ -2420,7 +2420,7 @@ module ietf-tpm-remote-attestation {
           <h4 id="name-ietf-tcg-algs">
 <a href="#section-2.1.2" class="section-number selfRef">2.1.2. </a><a href="#name-ietf-tcg-algs" class="section-name selfRef">'ietf-tcg-algs'</a>
           </h4>
-<p id="section-2.1.2-1">Cryptographic algorithm types were initially included within -v14 NETCONF's iana-crypto-types.yang.  Unfortunately, all this content including the algorithms needed here failed to make the -v15 used WGLC. As a result, this document has encoded the TCG Algorithm definitions of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span>, revision 1.32. By including this full table as a separate YANG file within this document, it is possible for other YANG models to leverage the contents of this model.<a href="#section-2.1.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.1.2-1">This document has encoded the TCG Algorithm definitions of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span>, revision 1.32. By including this full table as a separate YANG file within this document, it is possible for other YANG models to leverage the contents of this model.  Specific references to <span>[<a href="#RFC7748" class="xref">RFC7748</a>]</span>, <span>[<a href="#ISO-IEC-9797-1" class="xref">ISO-IEC-9797-1</a>]</span>, <span>[<a href="#ISO-IEC-9797-2" class="xref">ISO-IEC-9797-2</a>]</span>, <span>[<a href="#ISO-IEC-10116" class="xref">ISO-IEC-10116</a>]</span>, <span>[<a href="#ISO-IEC-10118-3" class="xref">ISO-IEC-10118-3</a>]</span>, <span>[<a href="#ISO-IEC-14888-3" class="xref">ISO-IEC-14888-3</a>]</span>, <span>[<a href="#ISO-IEC-15946-1" class="xref">ISO-IEC-15946-1</a>]</span>, <span>[<a href="#ISO-IEC-18033-3" class="xref">ISO-IEC-18033-3</a>]</span>, <span>[<a href="#IEEE-Std-1363-2000" class="xref">IEEE-Std-1363-2000</a>]</span>, <span>[<a href="#IEEE-Std-1363a-2004" class="xref">IEEE-Std-1363a-2004</a>]</span>, <span>[<a href="#NIST-PUB-FIPS-202" class="xref">NIST-PUB-FIPS-202</a>]</span>, <span>[<a href="#NIST-SP800-38C" class="xref">NIST-SP800-38C</a>]</span>, <span>[<a href="#NIST-SP800-38D" class="xref">NIST-SP800-38D</a>]</span>, <span>[<a href="#NIST-SP800-38F" class="xref">NIST-SP800-38F</a>]</span>, <span>[<a href="#NIST-SP800-56A" class="xref">NIST-SP800-56A</a>]</span>, <span>[<a href="#NIST-SP800-108" class="xref">NIST-SP800-108</a>]</span>, <span>[<a href="#PC-Client-EFI-TPM-1.2" class="xref">PC-Client-EFI-TPM-1.2</a>]</span>, <span>[<a href="#ima-log" class="xref">ima-log</a>]</span>, and <span>[<a href="#netequip-boot-log" class="xref">netequip-boot-log</a>]</span> exist within the YANG Model.<a href="#section-2.1.2-1" class="pilcrow">¶</a></p>
 <div id="features-1">
 <section id="section-2.1.2.1">
             <h5 id="name-features-2">
@@ -2436,14 +2436,11 @@ module ietf-tpm-remote-attestation {
             </h5>
 <p id="section-2.1.2.2-1">There are three types of identities in this model:<a href="#section-2.1.2.2-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-2.1.2.2-2">
-<li id="section-2.1.2.2-2.1">
-                <strong>Cryptographic functions</strong> supported by a TPM algorithm; these include: 'asymmetric', 'symmetric', 'hash', 'signing', 'anonymous_signing', 'encryption_mode', 'method', and 'object_type'. The definitions of each of these are in Table 2 of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span>.<a href="#section-2.1.2.2-2.1" class="pilcrow">¶</a>
+<li id="section-2.1.2.2-2.1">Cryptographic functions supported by a TPM algorithm; these include: 'asymmetric', 'symmetric', 'hash', 'signing', 'anonymous_signing', 'encryption_mode', 'method', and 'object_type'. The definitions of each of these are in Table 2 of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span>.<a href="#section-2.1.2.2-2.1" class="pilcrow">¶</a>
 </li>
-              <li id="section-2.1.2.2-2.2">
-                <strong>API specifications</strong> for TPMs: 'tpm12' and 'tpm20'<a href="#section-2.1.2.2-2.2" class="pilcrow">¶</a>
+              <li id="section-2.1.2.2-2.2">API specifications for TPMs: 'tpm12' and 'tpm20'<a href="#section-2.1.2.2-2.2" class="pilcrow">¶</a>
 </li>
-              <li id="section-2.1.2.2-2.3">
-                <strong>Specific algorithm types</strong>: Each algorithm type defines what cryptographic functions may be supported, and on which type of API specification. It is not required that an implementation of a specific TPM will support all algorithm types. The contents of each specific algorithm mirrors what is in Table 3 of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span>.<a href="#section-2.1.2.2-2.3" class="pilcrow">¶</a>
+              <li id="section-2.1.2.2-2.3">Specific algorithm types: Each algorithm type defines what cryptographic functions may be supported, and on which type of API specification. It is not required that an implementation of a specific TPM will support all algorithm types. The contents of each specific algorithm mirrors what is in Table 3 of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span>.<a href="#section-2.1.2.2-2.3" class="pilcrow">¶</a>
 </li>
             </ol>
 </section>
@@ -2455,7 +2452,7 @@ module ietf-tpm-remote-attestation {
             </h5>
 <div id="section-2.1.2.3-1">
 <pre class="lang-YANG sourcecode">
-&lt;CODE BEGINS&gt; file "ietf-tcg-algs@2021-11-05.yang"
+&lt;CODE BEGINS&gt; file "ietf-tcg-algs@2022-01-27.yang"
 module ietf-tcg-algs {
   yang-version 1.1;
   namespace "urn:ietf:params:xml:ns:yang:ietf-tcg-algs";
@@ -3176,8 +3173,7 @@ module ietf-tcg-algs {
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
 <p id="section-3-1">This document registers the following namespace URIs in the
-<a href="https://www.iana.org/assignments/xml-registry#ns" class="relref">"ns" class of the IETF XML Registry</a>
-        <span>[<a href="#IANA.xml-registry" class="xref">IANA.xml-registry</a>]</span> as per <span>[<a href="#RFC3688" class="xref">RFC3688</a>]</span>:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<span>[<a href="#xml-registry" class="xref">xml-registry</a>]</span> as per <span>[<a href="#RFC3688" class="xref">RFC3688</a>]</span>:<a href="#section-3-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-3-2">
         <dt id="section-3-2.1">
 URI:  </dt>
@@ -3221,8 +3217,7 @@ XML:      </dt>
       <dd class="break"></dd>
 </dl>
 <p id="section-3-3">This document registers the following YANG modules in the
-"<a href="https://www.iana.org/assignments/yang-parameters#yang-parameters-1" class="relref">YANG Module Names</a>"
-registry <span>[<a href="#IANA.yang-parameters" class="xref">IANA.yang-parameters</a>]</span> as per <span><a href="https://rfc-editor.org/rfc/rfc6020#section-14" class="relref">Section 14</a> of [<a href="#RFC6020" class="xref">RFC6020</a>]</span>:<a href="#section-3-3" class="pilcrow">¶</a></p>
+registry <span>[<a href="#yang-parameters" class="xref">yang-parameters</a>]</span> as per Section 14 of <span>[<a href="#RFC6020" class="xref">RFC6020</a>]</span>:<a href="#section-3-3" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-3-4">
         <dt id="section-3-4.1">
 Name:  </dt>
@@ -3328,7 +3323,7 @@ RPC 'log-retrieval':  </dt>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-4-4">Information collected through the RPCs above could reveal that specific versions of software and configurations of endpoints that could identify vulnerabilities on those systems.  Therefore RPCs should be protected by NACM <span>[<a href="#RFC8341" class="xref">RFC8341</a>]</span> to limit the extraction of attestation data by only authorized Verifiers.<a href="#section-4-4" class="pilcrow">¶</a></p>
+<p id="section-4-4">Information collected through the RPCs above could reveal that specific versions of software and configurations of endpoints that could identify vulnerabilities on those systems.  Therefore RPCs should be protected by NACM <span>[<a href="#RFC8341" class="xref">RFC8341</a>]</span> with a default setting of deny-all to limit the extraction of attestation data by only authorized Verifiers.<a href="#section-4-4" class="pilcrow">¶</a></p>
 <p id="section-4-5">For the YANG module ietf-tcg-algs.yang, please use care when selecting specific algorithms.  The introductory section of <span>[<a href="#TCG-Algos" class="xref">TCG-Algos</a>]</span> highlights that some algorithms should be considered legacy, and recommends implementers and adopters diligently evaluate available information such as governmental, industrial, and academic research before selecting an algorithm for use.<a href="#section-4-5" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -3432,15 +3427,79 @@ RPC 'log-retrieval':  </dt>
 <dd class="break"></dd>
 <dt id="I-D.ietf-rats-tpm-based-network-device-attest">[I-D.ietf-rats-tpm-based-network-device-attest]</dt>
         <dd>
-<span class="refAuthor">Fedorkow, G.</span>, <span class="refAuthor">Voit, E.</span>, and <span class="refAuthor">J. Fitzgerald-McKay</span>, <span class="refTitle">"TPM-based Network Device Remote Integrity Verification"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-rats-tpm-based-network-device-attest-10</span>, <time datetime="2021-12-30" class="refDate">30 December 2021</time>, <span>&lt;<a href="https://www.ietf.org/archive/id/draft-ietf-rats-tpm-based-network-device-attest-10.txt">https://www.ietf.org/archive/id/draft-ietf-rats-tpm-based-network-device-attest-10.txt</a>&gt;</span>. </dd>
+<span class="refAuthor">Fedorkow, G.</span>, <span class="refAuthor">Voit, E.</span>, and <span class="refAuthor">J. Fitzgerald-McKay</span>, <span class="refTitle">"TPM-based Network Device Remote Integrity Verification"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-rats-tpm-based-network-device-attest-11</span>, <time datetime="2022-01-29" class="refDate">29 January 2022</time>, <span>&lt;<a href="https://www.ietf.org/archive/id/draft-ietf-rats-tpm-based-network-device-attest-11.txt">https://www.ietf.org/archive/id/draft-ietf-rats-tpm-based-network-device-attest-11.txt</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="IANA.xml-registry">[IANA.xml-registry]</dt>
+<dt id="IEEE-Std-1363-2000">[IEEE-Std-1363-2000]</dt>
         <dd>
-<span class="refAuthor">IANA</span>, <span class="refTitle">"IETF XML Registry"</span>, <span>&lt;<a href="https://www.iana.org/assignments/xml-registry">https://www.iana.org/assignments/xml-registry</a>&gt;</span>. </dd>
+<span class="refTitle">"IEEE 1363-2000 - IEEE Standard Specifications for Public-Key Cryptography"</span>, <span>n.d.</span>, <span>&lt;<a href="https://standards.ieee.org/standard/1363-2000.html">https://standards.ieee.org/standard/1363-2000.html</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="IANA.yang-parameters">[IANA.yang-parameters]</dt>
+<dt id="IEEE-Std-1363a-2004">[IEEE-Std-1363a-2004]</dt>
         <dd>
-<span class="refAuthor">IANA</span>, <span class="refTitle">"YANG Parameters"</span>, <span>&lt;<a href="https://www.iana.org/assignments/yang-parameters">https://www.iana.org/assignments/yang-parameters</a>&gt;</span>. </dd>
+<span class="refTitle">"1363a-2004 - IEEE Standard Specifications for Public-Key Cryptography - Amendment 1: Additional Techniques"</span>, <span>n.d.</span>, <span>&lt;<a href="https://ieeexplore.ieee.org/document/1335427">https://ieeexplore.ieee.org/document/1335427</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ima-log">[ima-log]</dt>
+        <dd>
+<span class="refTitle">"Canonical Event Log Format, Section 4.3"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.trustedcomputinggroup.org/wp-content/uploads/TCG_IWG_CEL_v1_r0p30_13feb2021.pdf">https://www.trustedcomputinggroup.org/wp-content/uploads/TCG_IWG_CEL_v1_r0p30_13feb2021.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-10116">[ISO-IEC-10116]</dt>
+        <dd>
+<span class="refTitle">"ISO/IEC 10116:2017 - Information technology"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/64575.html">https://www.iso.org/standard/64575.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-10118-3">[ISO-IEC-10118-3]</dt>
+        <dd>
+<span class="refTitle">"Dedicated hash-functions - ISO/IEC 10118-3:2018"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/67116.html">https://www.iso.org/standard/67116.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-14888-3">[ISO-IEC-14888-3]</dt>
+        <dd>
+<span class="refTitle">"ISO/IEC 14888-3:2018 - Digital signatures with appendix"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/76382.html">https://www.iso.org/standard/76382.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-15946-1">[ISO-IEC-15946-1]</dt>
+        <dd>
+<span class="refTitle">"ISO/IEC 15946-1:2016 - Information technology"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/65480.html">https://www.iso.org/standard/65480.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-18033-3">[ISO-IEC-18033-3]</dt>
+        <dd>
+<span class="refTitle">"ISO/IEC 18033-3:2010 - Encryption algorithms"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/54531.html">https://www.iso.org/standard/54531.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-9797-1">[ISO-IEC-9797-1]</dt>
+        <dd>
+<span class="refTitle">"Message Authentication Codes (MACs) - ISO/IEC 9797-1:2011"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/50375.html">https://www.iso.org/standard/50375.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="ISO-IEC-9797-2">[ISO-IEC-9797-2]</dt>
+        <dd>
+<span class="refTitle">"Message Authentication Codes (MACs) - ISO/IEC 9797-2:2011"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iso.org/standard/51618.html">https://www.iso.org/standard/51618.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="netequip-boot-log">[netequip-boot-log]</dt>
+        <dd>
+<span class="refTitle">"IMA Policy Kernel Documentation"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.kernel.org/doc/Documentation/ABI/testing/ima_policy">https://www.kernel.org/doc/Documentation/ABI/testing/ima_policy</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-PUB-FIPS-202">[NIST-PUB-FIPS-202]</dt>
+        <dd>
+<span class="refTitle">"SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions"</span>, <span>n.d.</span>, <span>&lt;<a href="https://csrc.nist.gov/publications/detail/fips/202/final">https://csrc.nist.gov/publications/detail/fips/202/final</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-SP800-108">[NIST-SP800-108]</dt>
+        <dd>
+<span class="refTitle">"Recommendation for Key Derivation Using Pseudorandom Functions"</span>, <span>n.d.</span>, <span>&lt;<a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-108.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-108.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-SP800-38C">[NIST-SP800-38C]</dt>
+        <dd>
+<span class="refTitle">"Recommendation for Block Cipher Modes of Operation: the CCM Mode for Authentication and Confidentiality"</span>, <span>n.d.</span>, <span>&lt;<a href="https://csrc.nist.gov/publications/detail/sp/800-38c/final">https://csrc.nist.gov/publications/detail/sp/800-38c/final</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-SP800-38D">[NIST-SP800-38D]</dt>
+        <dd>
+<span class="refTitle">"Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC"</span>, <span>n.d.</span>, <span>&lt;<a href="https://csrc.nist.gov/publications/detail/sp/800-38d/final">https://csrc.nist.gov/publications/detail/sp/800-38d/final</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-SP800-38F">[NIST-SP800-38F]</dt>
+        <dd>
+<span class="refTitle">"Recommendation for Block Cipher Modes of Operation: Methods for Key Wrapping"</span>, <span>n.d.</span>, <span>&lt;<a href="https://csrc.nist.gov/publications/detail/sp/800-38f/final">https://csrc.nist.gov/publications/detail/sp/800-38f/final</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-SP800-56A">[NIST-SP800-56A]</dt>
+        <dd>
+<span class="refTitle">"Recommendation for Pair-Wise Key-Establishment Schemes Using Discrete Logarithm Cryptography"</span>, <span>n.d.</span>, <span>&lt;<a href="https://csrc.nist.gov/publications/detail/sp/800-56a/rev-3/final">https://csrc.nist.gov/publications/detail/sp/800-56a/rev-3/final</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="PC-Client-EFI-TPM-1.2">[PC-Client-EFI-TPM-1.2]</dt>
+        <dd>
+<span class="refAuthor">Trusted Computing Group</span>, <span class="refTitle">"TCG EFI Platform Specification for TPM Family 1.1 or 1.2, Specification Version 1.22, Revision 15"</span>, <time datetime="2014-01-01" class="refDate">1 January 2014</time>, <span>&lt;<a href="https://trustedcomputinggroup.org/resource/tcg-efi-platform-specification/">https://trustedcomputinggroup.org/resource/tcg-efi-platform-specification/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC2119">[RFC2119]</dt>
         <dd>
@@ -3462,9 +3521,25 @@ RPC 'log-retrieval':  </dt>
         <dd>
 <span class="refAuthor">Wasserman, M.</span>, <span class="refTitle">"Using the NETCONF Protocol over Secure Shell (SSH)"</span>, <span class="seriesInfo">RFC 6242</span>, <span class="seriesInfo">DOI 10.17487/RFC6242</span>, <time datetime="2011-06" class="refDate">June 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6242">https://www.rfc-editor.org/info/rfc6242</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="RFC6933">[RFC6933]</dt>
+        <dd>
+<span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Romascanu, D.</span>, <span class="refAuthor">Quittek, J.</span>, and <span class="refAuthor">M. Chandramouli</span>, <span class="refTitle">"Entity MIB (Version 4)"</span>, <span class="seriesInfo">RFC 6933</span>, <span class="seriesInfo">DOI 10.17487/RFC6933</span>, <time datetime="2013-05" class="refDate">May 2013</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6933">https://www.rfc-editor.org/info/rfc6933</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC6991">[RFC6991]</dt>
         <dd>
 <span class="refAuthor">Schoenwaelder, J., Ed.</span>, <span class="refTitle">"Common YANG Data Types"</span>, <span class="seriesInfo">RFC 6991</span>, <span class="seriesInfo">DOI 10.17487/RFC6991</span>, <time datetime="2013-07" class="refDate">July 2013</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6991">https://www.rfc-editor.org/info/rfc6991</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC7748">[RFC7748]</dt>
+        <dd>
+<span class="refAuthor">Langley, A.</span>, <span class="refAuthor">Hamburg, M.</span>, and <span class="refAuthor">S. Turner</span>, <span class="refTitle">"Elliptic Curves for Security"</span>, <span class="seriesInfo">RFC 7748</span>, <span class="seriesInfo">DOI 10.17487/RFC7748</span>, <time datetime="2016-01" class="refDate">January 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7748">https://www.rfc-editor.org/info/rfc7748</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8017">[RFC8017]</dt>
+        <dd>
+<span class="refAuthor">Moriarty, K., Ed.</span>, <span class="refAuthor">Kaliski, B.</span>, <span class="refAuthor">Jonsson, J.</span>, and <span class="refAuthor">A. Rusch</span>, <span class="refTitle">"PKCS #1: RSA Cryptography Specifications Version 2.2"</span>, <span class="seriesInfo">RFC 8017</span>, <span class="seriesInfo">DOI 10.17487/RFC8017</span>, <time datetime="2016-11" class="refDate">November 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8017">https://www.rfc-editor.org/info/rfc8017</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8032">[RFC8032]</dt>
+        <dd>
+<span class="refAuthor">Josefsson, S.</span> and <span class="refAuthor">I. Liusvaara</span>, <span class="refTitle">"Edwards-Curve Digital Signature Algorithm (EdDSA)"</span>, <span class="seriesInfo">RFC 8032</span>, <span class="seriesInfo">DOI 10.17487/RFC8032</span>, <time datetime="2017-01" class="refDate">January 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8032">https://www.rfc-editor.org/info/rfc8032</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8040">[RFC8040]</dt>
         <dd>
@@ -3488,19 +3563,43 @@ RPC 'log-retrieval':  </dt>
 <dd class="break"></dd>
 <dt id="TCG-Algos">[TCG-Algos]</dt>
         <dd>
-<span class="refTitle">"TCG_Algorithm_Registry_r1p32_pub"</span>, <span>n.d.</span>, <span>&lt;<a href="https://trustedcomputinggroup.org/resource/tcg-algorithm-registry/">https://trustedcomputinggroup.org/resource/tcg-algorithm-registry/</a>&gt;</span>. </dd>
+<span class="refTitle">"TCG Algorithm Registry"</span>, <span>n.d.</span>, <span>&lt;<a href="https://trustedcomputinggroup.org/wp-content/uploads/TCG-_Algorithm_Registry_r1p32_pub.pdf">https://trustedcomputinggroup.org/wp-content/uploads/TCG-_Algorithm_Registry_r1p32_pub.pdf</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="TPM1.2">[TPM1.2]</dt>
         <dd>
 <span class="refAuthor">TCG, .</span>, <span class="refTitle">"TPM 1.2 Main Specification"</span>, <time datetime="2003-10-02" class="refDate">2 October 2003</time>, <span>&lt;<a href="https://trustedcomputinggroup.org/resource/tpm-main-specification/">https://trustedcomputinggroup.org/resource/tpm-main-specification/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="TPM1.2-Commands">[TPM1.2-Commands]</dt>
+        <dd>
+<span class="refTitle">"TPM Main Part 3 Commands"</span>, <span>n.d.</span>, <span>&lt;<a href="https://trustedcomputinggroup.org/wp-content/uploads/TPM-Main-Part-3-Commands_v1.2_rev116_01032011.pdf">https://trustedcomputinggroup.org/wp-content/uploads/TPM-Main-Part-3-Commands_v1.2_rev116_01032011.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="TPM1.2-Structures">[TPM1.2-Structures]</dt>
+        <dd>
+<span class="refTitle">"TPM Main Part 2 TPM Structures"</span>, <span>n.d.</span>, <span>&lt;<a href="https://trustedcomputinggroup.org/wp-content/uploads/TPM-Main-Part-2-TPM-Structures_v1.2_rev116_01032011.pdf">https://trustedcomputinggroup.org/wp-content/uploads/TPM-Main-Part-2-TPM-Structures_v1.2_rev116_01032011.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="TPM2.0">[TPM2.0]</dt>
         <dd>
 <span class="refAuthor">TCG, .</span>, <span class="refTitle">"TPM 2.0 Library Specification"</span>, <time datetime="2013-03-15" class="refDate">15 March 2013</time>, <span>&lt;<a href="https://trustedcomputinggroup.org/resource/tpm-library-specification/">https://trustedcomputinggroup.org/resource/tpm-library-specification/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="TPM2.0-Arch">[TPM2.0-Arch]</dt>
+        <dd>
+<span class="refTitle">"Trusted Platform Module Library - Part 1: Architecture"</span>, <span>n.d.</span>, <span>&lt;<a href="https://trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-1-Architecture-01.07-2014-03-13.pdf">https://trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-1-Architecture-01.07-2014-03-13.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="TPM2.0-Key">[TPM2.0-Key]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">TCG, .</span>, <span class="refTitle">"TPM 2.0 Keys for Device Identity and Attestation, Rev10"</span>, <time datetime="2021-04-14" class="refDate">14 April 2021</time>, <span>&lt;<a href="https://trustedcomputinggroup.org/wp-content/uploads/TCG_IWG_DevID_v1r2_02dec2020.pdf">https://trustedcomputinggroup.org/wp-content/uploads/TCG_IWG_DevID_v1r2_02dec2020.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="TPM2.0-Structures">[TPM2.0-Structures]</dt>
+        <dd>
+<span class="refTitle">"Trusted Platform Module Library - Part 2: Structures"</span>, <span>n.d.</span>, <span>&lt;<a href="https://trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf">https://trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="xml-registry">[xml-registry]</dt>
+        <dd>
+<span class="refTitle">"IETF XML Registry"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iana.org/assignments/xml-registry/xml-registry.xhtml">https://www.iana.org/assignments/xml-registry/xml-registry.xhtml</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="yang-parameters">[yang-parameters]</dt>
+      <dd>
+<span class="refTitle">"YANG Parameters"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iana.org/assignments/yang-parameters/yang-parameters.xhtml">https://www.iana.org/assignments/yang-parameters/yang-parameters.xhtml</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
@@ -3517,21 +3616,9 @@ RPC 'log-retrieval':  </dt>
         <dd>
 <span class="refAuthor">Birkholz, H.</span>, <span class="refAuthor">Eckel, M.</span>, <span class="refAuthor">Pan, W.</span>, and <span class="refAuthor">E. Voit</span>, <span class="refTitle">"Reference Interaction Models for Remote Attestation Procedures"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-rats-reference-interaction-models-05</span>, <time datetime="2022-01-26" class="refDate">26 January 2022</time>, <span>&lt;<a href="https://www.ietf.org/archive/id/draft-ietf-rats-reference-interaction-models-05.txt">https://www.ietf.org/archive/id/draft-ietf-rats-reference-interaction-models-05.txt</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="ima-log">[ima-log]</dt>
-        <dd>
-<span class="refTitle">"Canonical Event Log Format, Section 4.3"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.trustedcomputinggroup.org/wp-content/uploads/TCG_IWG_CEL_v1_r0p30_13feb2021.pdf">https://www.trustedcomputinggroup.org/wp-content/uploads/TCG_IWG_CEL_v1_r0p30_13feb2021.pdf</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="netequip-boot-log">[netequip-boot-log]</dt>
-        <dd>
-<span class="refTitle">"IMA Policy Kernel Documentation"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.kernel.org/doc/Documentation/ABI/testing/ima_policy">https://www.kernel.org/doc/Documentation/ABI/testing/ima_policy</a>&gt;</span>. </dd>
-<dd class="break"></dd>
 <dt id="NIST-915121">[NIST-915121]</dt>
-        <dd>
-<span class="refTitle">"True Randomness Can’t be Left to Chance: Why entropy is important for information security"</span>, <span>n.d.</span>, <span>&lt;<a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=915121">https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=915121</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="PC-Client-EFI-TPM-1.2">[PC-Client-EFI-TPM-1.2]</dt>
       <dd>
-<span class="refAuthor">Trusted Computing Group</span>, <span class="refTitle">"TCG EFI Platform Specification for TPM Family 1.1 or 1.2, Specification Version 1.22, Revision 15"</span>, <time datetime="2014-01-01" class="refDate">1 January 2014</time>, <span>&lt;<a href="https://trustedcomputinggroup.org/resource/tcg-efi-platform-specification/">https://trustedcomputinggroup.org/resource/tcg-efi-platform-specification/</a>&gt;</span>. </dd>
+<span class="refTitle">"True Randomness Can’t be Left to Chance: Why entropy is important for information security"</span>, <span>n.d.</span>, <span>&lt;<a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=915121">https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=915121</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
