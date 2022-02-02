@@ -1023,7 +1023,9 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
        leaf event-type {
            type uint32;
            description
-             "log event type";
+             "BIOS Log Event Type:
+              https://trustedcomputinggroup.org/wp-content/uploads/
+              TCG_PCClient_PFP_r1p05_v23_pub.pdf  Section 10.4.1";
        }
        leaf pcr-index {
          type pcr;
@@ -1056,8 +1058,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
        leaf-list event-data {
          type uint8;
          description
-           "The event data size determined by event-size";
-       }
 
 
 
@@ -1066,6 +1066,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 19]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+           "The event data size determined by event-size";
+       }
      }
      grouping bios-event-log {
        description
@@ -1112,8 +1114,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
          description
            "Algorithm used for filedata-hash";
        }
-       leaf template-hash-algorithm {
-         type string;
 
 
 
@@ -1122,6 +1122,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 20]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+       leaf template-hash-algorithm {
+         type string;
          description
            "Algorithm used for template-hash";
        }
@@ -1168,8 +1170,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
             by event-number, using the IMA event format.";
          uses ima-event;
        }
-     }
-     grouping event-logs {
 
 
 
@@ -1178,6 +1178,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 21]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+     }
+     grouping event-logs {
        description
          "A selector for the log and its type.";
        choice attested_event_log_type {
@@ -1224,8 +1226,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
      rpc tpm12-challenge-response-attestation {
        if-feature "taa:tpm12";
        description
-         "This RPC accepts the input for TSS TPM 1.2 commands made to the
-          attesting device.";
 
 
 
@@ -1234,6 +1234,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 22]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+         "This RPC accepts the input for TSS TPM 1.2 commands made to the
+          attesting device.";
        input {
          container tpm12-attestation-challenge {
            description
@@ -1280,8 +1282,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
          "This RPC accepts the input for TSS TPM 2.0 commands of the
           managed device. ComponentIndex from the hardware manager YANG
           module to refer to dedicated TPM in composite devices,
-          e.g. smart NICs, is still a TODO.";
-       input {
 
 
 
@@ -1290,6 +1290,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 23]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+          e.g. smart NICs, is still a TODO.";
+       input {
          container tpm20-attestation-challenge {
            description
              "This container includes every information element defined
@@ -1336,8 +1338,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
           limited. The type of log is a choice that can be augmented.";
        input {
          list log-selector {
-           description
-             "Selection of log entries to be reported.";
 
 
 
@@ -1346,6 +1346,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 24]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+           description
+             "Selection of log entries to be reported.";
            uses tpm-name-selector;
            choice index-type {
              description
@@ -1392,8 +1394,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
              type uint16;
              description
                "The number of log entries to be returned. If omitted, it
-                means all of them.";
-           }
 
 
 
@@ -1402,6 +1402,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 25]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+                means all of them.";
+           }
          }
          uses log-identifier;
        }
@@ -1448,8 +1450,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
              "A component within this composite device which
               supports TPM operations.";
            leaf node-id {
-             type string;
-             description
 
 
 
@@ -1458,6 +1458,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 26]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+             type string;
+             description
                "ID of the compute node, such as Board Serial Number.";
            }
            leaf node-physical-index {
@@ -1504,8 +1506,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
              if-feature "hw:entity-mib";
              type int32 {
                range "1..2147483647";
-             }
-             config false;
 
 
 
@@ -1514,6 +1514,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 27]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+             }
+             config false;
              description
                "The entPhysicalIndex for the TPM.";
              reference
@@ -1560,8 +1562,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
            }
            leaf-list tpm12-pcrs {
              when "../firmware-version = 'taa:tpm12'";
-             type pcr;
-             description
 
 
 
@@ -1570,6 +1570,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 28]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+             type pcr;
+             description
                "The PCRs which may be extracted from this TPM1.2
                 compliant cryptoprocessor.";
            }
@@ -1616,8 +1618,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
                    "TPM2.0-Arch:
                     TPM-Rev-2.0-Part-1-Architecture-01.07-2014-03-13.pdf
                     Section 12";
-               }
-               enum non-operational {
 
 
 
@@ -1626,6 +1626,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 29]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+               }
+               enum non-operational {
                  value 1;
                  description
                    "TPM is in a state such as startup or shutdown which
@@ -1672,8 +1674,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
                      reference
                        "TPM2.0-Key:
                         https://trustedcomputinggroup.org/wp-content/
-                        uploads/TCG_IWG_DevID_v1r2_02dec2020.pdf
-                        Section 3.11";
 
 
 
@@ -1682,6 +1682,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 30]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+                        uploads/TCG_IWG_DevID_v1r2_02dec2020.pdf
+                        Section 3.11";
                    }
                    enum initial-attestation-certificate {
                      value 1;
@@ -1728,8 +1730,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
          leaf-list tpm12-hash {
            when "../../tpm:tpms"
               + "/tpm:tpm[tpm:firmware-version='taa:tpm12']";
-           type identityref {
-             base taa:hash;
 
 
 
@@ -1738,6 +1738,8 @@ Birkholz, et al.          Expires 6 August 2022                [Page 31]
 Internet-Draft            YANG-CHARRA for TPMs             February 2022
 
 
+           type identityref {
+             base taa:hash;
            }
            description
              "Platform supported TPM12 hash algorithms.";
@@ -1784,8 +1786,6 @@ Internet-Draft            YANG-CHARRA for TPMs             February 2022
    supporting the corresponding type of TCG TPM API is present on an
    Attester.  Most commonly, only one type of cryptoprocessor will be
    available on an Attester.
-
-
 
 
 
