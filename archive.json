@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-02-02T17:24:42.651584+00:00",
+  "timestamp": "2022-02-04T19:19:32.013986+00:00",
   "repo": "ietf-rats-wg/basic-yang-module",
   "labels": [
     {
@@ -273,15 +273,15 @@
       "id": "I_kwDODX-izs5C41uq",
       "title": "Reference for Event Type for BIOS Event Logs in insufficiant",
       "url": "https://github.com/ietf-rats-wg/basic-yang-module/issues/62",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Must be better than \"log event type\"",
       "createdAt": "2022-02-02T17:23:56Z",
-      "updatedAt": "2022-02-02T17:23:56Z",
-      "closedAt": null,
+      "updatedAt": "2022-02-02T17:46:20Z",
+      "closedAt": "2022-02-02T17:46:20Z",
       "comments": []
     }
   ],
@@ -2634,24 +2634,26 @@
       "id": "PR_kwDODX-izs4xwjPb",
       "title": "MD file updates based on Tom Petch.",
       "url": "https://github.com/ietf-rats-wg/basic-yang-module/pull/61",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ericvoit",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2022-01-28T20:54:36Z",
-      "updatedAt": "2022-01-29T10:39:22Z",
+      "updatedAt": "2022-02-02T17:42:55Z",
       "baseRepository": "ietf-rats-wg/basic-yang-module",
       "baseRefName": "master",
       "baseRefOid": "12eaefac8daee28a2efa75a997c116b25ac8e905",
       "headRepository": "ietf-rats-wg/basic-yang-module",
       "headRefName": "ericvoit-MD-file-updates-Tom-Petch",
       "headRefOid": "6cffe248387ba9811436b973e3f2fb0cc04da736",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-02-02T17:42:55Z",
+      "mergedAt": "2022-02-02T17:42:55Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "408d1f0f28edf11f34c06b026c28f5c9e111c527"
+      },
       "comments": [],
       "reviews": [
         {
@@ -2671,6 +2673,154 @@
               "body": "why is this more appropriate thatn using the ref pulled by kramdown directly?",
               "createdAt": "2022-01-29T10:37:57Z",
               "updatedAt": "2022-01-29T10:39:22Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDODX-izs4z6OGh",
+          "commit": {
+            "abbreviatedOid": "6cffe24"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-02-02T17:42:22Z",
+          "updatedAt": "2022-02-02T17:42:22Z",
+          "comments": [
+            {
+              "originalPosition": 16,
+              "body": "Addresses a temporary local tool chain issue. Okay for now. Will revert before submit and leave the work-around in as a comment.",
+              "createdAt": "2022-02-02T17:42:22Z",
+              "updatedAt": "2022-02-02T17:42:22Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDODX-izs4z6ONe",
+          "commit": {
+            "abbreviatedOid": "6cffe24"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-02-02T17:42:42Z",
+          "updatedAt": "2022-02-02T17:42:42Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "id": "PR_kwDODX-izs4x-zRW",
+      "title": "adding a suitable reference for event-type",
+      "url": "https://github.com/ietf-rats-wg/basic-yang-module/pull/63",
+      "state": "MERGED",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "ericvoit"
+      ],
+      "labels": [],
+      "body": "Using \"Table 14 Events\" in Section 10.4.1 in TCG PFP spec for the uint32 ref.",
+      "createdAt": "2022-02-02T17:34:17Z",
+      "updatedAt": "2022-02-02T17:45:19Z",
+      "baseRepository": "ietf-rats-wg/basic-yang-module",
+      "baseRefName": "master",
+      "baseRefOid": "0f9e8cd6567ae9af508f57bd1bad7964462938a3",
+      "headRepository": "ietf-rats-wg/basic-yang-module",
+      "headRefName": "event-type_ref",
+      "headRefOid": "b2ed5bb85b21666a8882320d89f9e22f30c40e42",
+      "closedAt": "2022-02-02T17:45:19Z",
+      "mergedAt": "2022-02-02T17:45:19Z",
+      "mergedBy": "ericvoit",
+      "mergeCommit": {
+        "oid": "dfe72a2edb0edda6a5bf8bb1d53817cced521733"
+      },
+      "comments": [
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "fixes #62 ",
+          "createdAt": "2022-02-02T17:37:40Z",
+          "updatedAt": "2022-02-02T17:37:40Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDODX-izs4z6NZs",
+          "commit": {
+            "abbreviatedOid": "b2ed5bb"
+          },
+          "author": "ericvoit",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-02-02T17:39:51Z",
+          "updatedAt": "2022-02-02T17:39:51Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "id": "PR_kwDODX-izs4x-2gl",
+      "title": "Updating log-event reference",
+      "url": "https://github.com/ietf-rats-wg/basic-yang-module/pull/64",
+      "state": "MERGED",
+      "author": "ericvoit",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-02-02T17:50:36Z",
+      "updatedAt": "2022-02-02T18:00:22Z",
+      "baseRepository": "ietf-rats-wg/basic-yang-module",
+      "baseRefName": "master",
+      "baseRefOid": "dfe72a2edb0edda6a5bf8bb1d53817cced521733",
+      "headRepository": "ietf-rats-wg/basic-yang-module",
+      "headRefName": "ericvoit-log-event-reference",
+      "headRefOid": "b578bce7991f95a19fcf4e78f2d389f60b64c5bc",
+      "closedAt": "2022-02-02T18:00:22Z",
+      "mergedAt": "2022-02-02T18:00:22Z",
+      "mergedBy": "ericvoit",
+      "mergeCommit": {
+        "oid": "72e7912c3dc89c0d49044b98b7fb8b86b0a879c1"
+      },
+      "comments": [
+        {
+          "author": "ericvoit",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@henkbirkholz - if spaces are allowed in kramdown references, then this should work.   AFAIK, this is ready to post to IETF.",
+          "createdAt": "2022-02-02T17:51:52Z",
+          "updatedAt": "2022-02-02T17:51:52Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDODX-izs4z6Sma",
+          "commit": {
+            "abbreviatedOid": "b578bce"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "createdAt": "2022-02-02T17:58:12Z",
+          "updatedAt": "2022-02-02T17:58:49Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "```suggestion\r\n  BIOS-Log-Event-Type:\r\n```",
+              "createdAt": "2022-02-02T17:58:12Z",
+              "updatedAt": "2022-02-02T17:58:49Z"
+            },
+            {
+              "originalPosition": 16,
+              "body": "```suggestion\r\nThis YANG module imports modules from {{-ietf-yang-types}}, {{-ietf-hardware}}, {{-ietf-keystore}}, and `ietf-tcg-algs.yang` {{ref-ietf-tcg-algs}}.  Additionally references are made to {{RFC8032}},  {{RFC8017}},  {{RFC6933}},  {{TPM1.2-Commands}},  {{TPM2.0-Arch}},  {{TPM2.0-Structures}},  {{TPM2.0-Key}}, {{TPM1.2-Structures}},  {{PC-Client-EFI-TPM-1.2}}, {{ima-log}},  {{BIOS-Log-Event-Type}} and {{netequip-boot-log}}.\r\n```",
+              "createdAt": "2022-02-02T17:58:32Z",
+              "updatedAt": "2022-02-02T17:58:49Z"
             }
           ]
         }
