@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-02-04T19:19:32.013986+00:00",
+  "timestamp": "2022-02-16T14:20:31.385524+00:00",
   "repo": "ietf-rats-wg/basic-yang-module",
   "labels": [
     {
@@ -2825,6 +2825,32 @@
           ]
         }
       ]
+    },
+    {
+      "number": 65,
+      "id": "PR_kwDODX-izs4y7gbI",
+      "title": "Tom P tweaks",
+      "url": "https://github.com/ietf-rats-wg/basic-yang-module/pull/65",
+      "state": "OPEN",
+      "author": "ericvoit",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-02-16T14:19:59Z",
+      "updatedAt": "2022-02-16T14:19:59Z",
+      "baseRepository": "ietf-rats-wg/basic-yang-module",
+      "baseRefName": "master",
+      "baseRefOid": "129d17e120529cc3d03cdea0ac14702332a42a41",
+      "headRepository": "ietf-rats-wg/basic-yang-module",
+      "headRefName": "ericvoit-patch-2",
+      "headRefOid": "3f02a29f3ca303563a441fd65c687f61040479cc",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
